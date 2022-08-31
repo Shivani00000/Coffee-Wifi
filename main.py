@@ -29,7 +29,7 @@ class CafeForm(FlaskForm):
 
 
 # All Flask routes
-@app.route("/")
+@app.route("/", methods=['GET'])
 def home():
     return render_template("index.html")
 
